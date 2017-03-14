@@ -21,7 +21,7 @@ function NowToNext(func, callbacks, arg, index) {
     var prev = callbacks[0],
 
         now = function(){
-               var _args =   Array.prototype.slice.call(arguments)
+               var _args =  Array.prototype.slice.call(arguments)
                prev(_args[0]);
                func.splice(0, 1);
                callbacks.splice(0,1);
